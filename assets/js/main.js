@@ -49,3 +49,18 @@ function articleRow(post) {
 // Simple router based on page
 if (document.body.contains(document.getElementById('featuredPosts'))) renderFeatured();
 if (document.body.contains(document.getElementById('blogList'))) renderBlogList();
+
+/* === Theme Toggle (Lowlight Blog) === */
+(function(){
+  const toggle = document.getElementById('themeToggle');
+  if(!toggle) return;
+
+  const apply = theme => document.documentElement.classList.toggle('light', theme === 'light');
+  const stored = localStorage.getItem('theme');
+  apply(stored ? stored : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+
+  toggle.addEventListener('click', () => {
+    const next = document.documentElement.classList.contains('light') ? 'dark' : 'light';
+    apply(next); localStorage.setItem('theme', next);
+  });
+})();
