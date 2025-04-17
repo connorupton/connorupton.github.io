@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post Title | Modern Blog</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <!-- OpenGraph & SEO meta (edit per‑post) -->
+  <meta name="description" content="Short excerpt of the post for SEO." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="/">Modern<span>Blog</span></a></div>
+    <nav id="site-nav" class="nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html" class="active">Blog</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button aria-label="Menu" class="menu-toggle" id="menuToggle"></button>
+  </header>
+
+  <article class="post">
+    <header class="post-header">
+      <h1>Post Title Goes Here</h1>
+      <p class="post-meta">By <span class="author">Connor</span> • <time datetime="2025-04-16">April 16, 2025</time></p>
+    </header>
+
+    <figure>
+      <img src="/assets/images/sample-hero.jpg" alt="Descriptive alt text" />
+      <figcaption>Optional image caption.</figcaption>
+    </figure>
+
+    <section class="post-content">
+      <h2>Subheading</h2>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <blockquote>"Compelling pull‑quote"</blockquote>
+      <p>More content...</p>
+      <h3>Another Subheading</h3>
+      <p>...</p>
+    </section>
+
+    <footer class="post-footer">
+      <div class="share">
+        <span>Share:</span>
+        <a href="#" class="share-btn" data-platform="twitter">Twitter</a>
+        <a href="#" class="share-btn" data-platform="facebook">Facebook</a>
+        <a href="#" class="share-btn" data-platform="linkedin">LinkedIn</a>
+      </div>
+      <div id="comments">
+        <!-- Integrate third‑party (e.g., Disqus) or custom comments here -->
+      </div>
+    </footer>
+  </article>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> ModernBlog. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
