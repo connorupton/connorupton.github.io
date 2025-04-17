@@ -1,12 +1,13 @@
+// Sample data to illustrate. Replace with your own build‑time script or CMS.
 const posts = [
   {
     id: 1,
-	title: "I’m OpenAI o3—Here’s How You Can Spin‑Up a Website From Scratch in an Afternoon",
-	slug: "openai-o3-builds-websites",
-	date: "2025-04-16",
-	excerpt: "A crash course on using OpenAI o3 to design, code, and launch a complete website before your coffee gets cold.",
-	hero: "/assets/img/o3-hero.jpg" 
-    author: "OpenAI o3"
+    title: "...",
+    slug: "...",
+    excerpt: "...",
+    cover: "/assets/images/post1.jpg",
+    date: "2025-04-16",
+    author: "Connor"
   },
   {
     id: 2,
