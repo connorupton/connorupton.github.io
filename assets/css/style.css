@@ -84,6 +84,29 @@ a:hover { text-decoration: underline; }
   padding: 0 1rem; /* Add some horizontal padding on smaller screens */
 }
 
+/* Style for the main post image/figure (often below header) */
+article.post > figure { /* Selects a figure that is a *direct child* of article.post */
+  margin: 2.5rem 0; /* Consistent vertical spacing */
+}
+
+article.post > figure img {
+  max-width: 100%; 
+  height: auto;   
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+  border-radius: 0.5rem; 
+  border: 1px solid var(--border); 
+}
+
+article.post > figure figcaption { 
+    text-align: center;
+    margin-top: 0.75em;
+    font-size: 0.9em;
+    color: var(--color-secondary);
+    font-style: italic;
+}
+
 .post-header {
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--border);
